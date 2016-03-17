@@ -101,7 +101,7 @@ function! s:init() "{{{
         \ (exists('g:delimitMate_expand_cr') && g:delimitMate_expand_cr == 1))
     echom "delimitMate: There seems to be some incompatibility with your settings that may interfer with the expansion of <CR>. See :help 'delimitMate_expand_cr' for details."
   endif
-  call s:option_init("expand_cr", 0)
+  call s:option_init("expand_cr", 1)
   " expand_in_quotes
   call s:option_init('expand_inside_quotes', 0)
   " jump_expansion
